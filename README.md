@@ -8,7 +8,7 @@ The project was designed by a team of 6 undergraduate students  and simulates a 
 
 # System Architecture
 
-**1- Transmitter (TX)**
+**1- Transmitter (TX)** :
 The Transmitter converts 8-bit parallel low-speed data into a 12 Gbps serial stream with pre-distortion to combat channel loss. 
 
 - 8-bit Serializer: Uses a tree-structure architecture (MUX 8:4 → 4:2 → 2:1) to serialize data. The final stage operates at full rate (12 Gbps) using CML logic for high speed.
@@ -20,11 +20,11 @@ The Transmitter converts 8-bit parallel low-speed data into a 12 Gbps serial str
 - Verilog-A Controller: Used for swing control, calibration of the termination resistance, and FFE tap weight adaptation.
 
 
-**2- Channel**
+**2- Channel** :
 The system is tested over a differential channel with approximately -16.8 dB loss at 6 GHz (Nyquist frequency).
 
 
-**3- Receiver (RX)**
+**3- Receiver (RX)** :
 The Receiver recovers the 12 Gbps serial data, equalizes channel loss, and deserializes the output.
 
 - Variable Gain Amplifier (VGA): The first stage of the RX. It provides adjustable gain to normalize signal amplitude for the subsequent equalizer stages, ensuring optimal processing range.
