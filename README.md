@@ -39,3 +39,12 @@ High-speed comparators convert the equalized analog signal to digital bits.
 - Deserializer :
 The digital bits from the comparator is deserialized back into an 8-bit parallel bus.
 
+
+# Team
+- Adham Khaled
+- Belal Soliman
+- Moaz Adel
+- Mahmoud Ahmed
+- Mostafa Mohamed
+- Mohamed Yahia
+
